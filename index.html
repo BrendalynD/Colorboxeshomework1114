@@ -15,46 +15,60 @@
     
     
     
-          $("#button_draw_triangle").click(function() {
-     
-    
-          });
-    
-          $("#button_draw_rotated_triangle").click(function() {
+          $("#changebox1").click(function(canvas) {width="200"; height="200";style="border:1px solid #000000";
 
     
           });
     
-          $("#button_clear_canvas").click(function() {
-        
+          $("#changebox2").click(function(color) { color:color
+
     
           });
     
+          $document.addEventListener("click",function(){changebox3.style.background = "lightblue";
+       
+        
+          });
+
+          $("#resetcolors").click(function() {
+
+    
+});
+    
+$("#changeall").click(function() {
+
+    
+});
+
+$("#showall").click(function() { 
+
+    
+});
         });
         </script>
 </head>
 <body>
-    <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
+    <canvas id="box1" width="200" height="200" style="border:1px solid #000000;"></canvas>
 
     <div class="column">
 
-        <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
+        <canvas id="box2" width="200" height="200" style="border:1px solid #000000;"></canvas>
     </div>
       <div class="row">
           <div class="column">
-            <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
+            <canvas id="box3" width="200" height="200" style="border:1px solid #000000;"></canvas>
 
-            <div id="draw_buttons">
-                <button id="button_draw_triangle">change box 1</button>
-                <button id="button_draw_rotated_triangle">change box 2</button>
-                <button id="button_clear_canvas">Change box 3</button>
-                <button id="button_draw_triangle">change ALL</button>
-                <button id="button_draw_rotated_triangle">hide box 1</button>
-                <button id="button_clear_canvas">hide box 2</button>
-                <button id="button_draw_triangle">hide box 3</button>
-                <button id="button_draw_rotated_triangle">hide all</button>
-                <button id="button_clear_canvas">reset colors</button>
-                <button id="button_draw_triangle">show all</button>
+            <div id="change buttons">
+                <button id="changebox1">change box 1</button>
+                <button id="changebox2">change box 2</button>
+                <button id="changebox3">Change box 3</button>
+                <button id="changeallbuttton">change ALL</button>
+                <button id="hidebox1">hide box 1</button>
+                <button id="hidebox2">hide box 2</button>
+                <button id="hidebox3">hide box 3</button>
+                <button id="hideall button">hide all</button>
+                <button id="resetcolors">reset colors</button>
+                <button id="showallbutton">show all</button>
  
           </div>
       </div>
